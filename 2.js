@@ -1,24 +1,36 @@
+
 function max(input) {
-    let result=0n
+    let arry = []
     for(let i of arguments){
-        let arry = []
-        
-        if(typeof arguments=='string'){
-            arguments=BigInt(arguments)
-            arry.push(arguments)
-        }else if(arguments<= 9007199254740991n){
-            arguments=BigInt(arguments)
-        }else if(arguments.length===0){
-            return 'null'
-        }else if(typeof(arguments)===BigInt){
-            
-            for(let i in arguments){
-                if(arguments[i]<arguments[i+1]){
-                    result=arguments[i+1]
-                }
+        arry.push(i)
+    }
+    let result = 0n
+    
+    if(arry.length ===0){
+        throw 'null'
+    }
+    
+    try {
+        for (let j = 0; j < arry.length; j++) {
+            if(typeof arry[j]!== BigInt && arry[j]>9007199254740991){
+                throw 'big error'
+            }else if (typeof arry[j]=== 'string' ||arry[j]<= 9007199254740991n){
+                arry[j]=BigInt(arry[j])
             }
         }
+     } catch (error) {
+        
+         throw 'big error'
+         
+         
+     }
+    for (let u = 0; u < arry.length; u++) {
+        if(arry[u]>result){
+            result = arry[u]
+        }    
+        
     }
-    return result
+    console.log(result)
 }
-console.log(max(1n, 10n, 5n))
+ 
+max("") 
