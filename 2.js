@@ -14,7 +14,10 @@ function max(input) {
         for (let j = 0; j < arry.length; j++) {
             if(typeof arry[j]!== BigInt && arry[j]>9007199254740991){
                 throw 'big error'
-            }else if (typeof arry[j]=== 'string' ||arry[j]<= 9007199254740991n){
+            }else if(!BigInt(arry[j])){
+                throw 'big error'
+            }
+            else if (typeof arry[j]=== 'string' ||arry[j]<= 9007199254740991n){
                 arry[j]=BigInt(arry[j])
             }
         }
