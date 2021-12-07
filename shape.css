@@ -22,7 +22,7 @@ FFCA1D,53A842,FFFFFF,F2F2F2,53A842 */
     color: white;
 }
 .logo{
-   height: 40px;
+   height: 20px;
 }
 
 
@@ -124,5 +124,6 @@ img {
 .cortageitem:hover{
     transform: scale(1.1);
     border-bottom:#53A842 solid 4px ;
+    
     
 }
