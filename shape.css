@@ -28,9 +28,6 @@ FFCA1D,53A842,FFFFFF,F2F2F2,53A842 */
     margin-right: 320px;
     color: white;
 }
-.logo{
-   height: 20px;
-}
 
 
 .headeritem img{
@@ -66,8 +63,8 @@ li{
 }
 img {
     display: block;
-    width: 50px;
-    height: 50px;
+    
+    height: 30px;
 }
 .menu{
     margin: 0 0 20px 0;
@@ -102,6 +99,7 @@ img {
     
 }
 .cortageitem{
+   
     padding: 20px 30px;
     margin: 0 20px;
     background-color: white;
