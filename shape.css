@@ -4,8 +4,15 @@
 --white-2: #FFFFFFff;
 --white-3: #FFFFFFff;
 FFCA1D,53A842,FFFFFF,F2F2F2,53A842 */
+@font-face {
+    font-family: 'iran sans';
+    src: url("./IRANSansWeb\(FaNum\)_Medium.woff2") format("woff2"),;
+  }
+  
+
 *{
     font-size: 10px;
+    font-family: 'iran sans' , sans-serif;
 }
 .premenu{
     background-color: #53A842;
